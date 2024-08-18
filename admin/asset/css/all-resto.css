@@ -1,0 +1,63 @@
+/* Styling untuk header tabel */
+.table-header {
+    background-color: #d3bbff;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+/* Styling untuk ikon aksi tombol */
+.action-icons .btn {
+    padding: 5px 10px;
+}
+
+/* Mengatur container untuk menggeser tabel ke kanan */
+.table-responsive {
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 20px;
+}
+
+/* Jika ingin memberikan jarak antara tabel dan tepi kanan kontainer */
+.table-responsive table {
+    margin-left: auto;
+}
+
+/* Styling untuk konten utama di sebelah sidebar */
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+main {
+    margin-left: 250px; /* Sesuaikan dengan lebar sidebar Anda */
+    padding: 20px;
+}
+
+/* Styling untuk sidebar */
+.sidebar {
+    width: 250px; /* Sesuaikan dengan lebar sidebar Anda */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #343a40;
+    padding: 20px;
+    height: 100vh; /* Memastikan sidebar memiliki tinggi penuh */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    main {
+        margin-left: 0;
+    }
+}
