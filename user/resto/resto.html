@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Menu Makanan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Tambah Menu Makanan</h2>
+        <form id="foodForm">
+            <div class="form-group">
+                <label for="foodName">Nama Makanan</label>
+                <input type="text" class="form-control" id="foodName" name="foodName" required>
+            </div>
+            <div class="form-group">
+                <label for="foodPrice">Harga</label>
+                <input type="number" class="form-control" id="foodPrice" name="foodPrice" required>
+            </div>
+            <div class="form-group">
+                <label for="foodCalories">Jumlah Kalori</label>
+                <input type="number" class="form-control" id="foodCalories" name="foodCalories" required>
+            </div>
+            <div class="form-group">
+                <label for="foodProtein">Protein (g)</label>
+                <input type="number" class="form-control" id="foodProtein" name="foodProtein" required>
+            </div>
+            <div class="form-group">
+                <label for="foodCarbs">Karbohidrat (g)</label>
+                <input type="number" class="form-control" id="foodCarbs" name="foodCarbs" required>
+            </div>
+            <div class="form-group">
+                <label for="foodFat">Lemak (g)</label>
+                <input type="number" class="form-control" id="foodFat" name="foodFat" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Tambah Makanan</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+</body>
+</html>
