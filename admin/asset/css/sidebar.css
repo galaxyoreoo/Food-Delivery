@@ -1,0 +1,76 @@
+body {
+  font-size: .875rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-logo {
+  width: 100%; /* Sesuaikan lebar gambar dengan sidebar */
+  padding: 10px 0; /* Menambahkan padding di sekitar logo */
+  text-align: center; /* Menyelaraskan gambar ke tengah */
+}
+.sidebar-logo img {
+  max-width: 200px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #bdbfc0; /* Warna background ketika dihover */
+  color: #ffffff; /* Warna font ketika dihover */
+}
+
+.nav-link.active {
+  color: #ffffff; /* Warna teks aktif */
+  background-color: #bdbfc0; /* Warna latar belakang untuk link aktif */
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.collapse {
+  transform: none !important;
+}
+
+.collapse ul {
+  padding-left: 0;
+}
+
+.active-page {
+    background-color: #007bff; /* Warna biru */
+    color: #ffffff; /* Warna teks putih */
+}
+.active-page .nav-link {
+    color: #ffffff;
+}
+
+.nav-link i {
+  margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+}

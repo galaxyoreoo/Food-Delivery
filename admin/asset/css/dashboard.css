@@ -1,0 +1,98 @@
+/* Mengatur body untuk menampilkan konten di samping sidebar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menambahkan flex display untuk body */
+}
+
+/* Styling untuk sidebar */
+.sidebar {
+    width: 250px; /* Sesuaikan dengan lebar sidebar Anda */
+    height: 100vh;
+    position: fixed; /* Memastikan sidebar tetap di tempat */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    /* Menambah jarak dari tepi kanan jika diperlukan */
+}
+
+/* Styling untuk konten dashboard */
+.dashboard {
+    margin-left: 250px; /* Menyesuaikan dengan lebar sidebar */
+    padding: 20px;
+    padding-left: 20px;
+    width: calc(100% - 250px); /* Menghitung lebar dashboard */
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px; /* Menambahkan margin bawah untuk tata letak */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk judul halaman */
+h1 {
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* Styling untuk container dashboard */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Styling untuk item dashboard */
+.dashboard-item {
+    background: #f0f0f0;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Responsive layout adjustment */
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk ikon di item dashboard */
+.dashboard-item .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk gambar ikon */
+.dashboard-item .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Styling untuk informasi di item dashboard */
+.dashboard-item .info h3 {
+    margin: 0;
+    font-size: 30px;
+    color: #4A4A4A;
+}
+
+.dashboard-item .info p {
+    margin: 5px 0 0;
+    color: #888;
+}
+
+/* Responsif: Menyesuaikan layout untuk layar kecil */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .dashboard {
+        margin-left: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,159 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dde5f4;
+  height: 100vh;
+}
+
+.screen-1 {
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+  width: 400px; /* Sesuaikan lebarnya sesuai kebutuhan */
+  align-items: center; /* Pusatkan konten secara horizontal */
+  margin-top: 2em; /* Jarak dari atas */
+  margin-bottom: 2em; /* Jarak dari bawah */
+}
+
+.screen-1 .logo {
+  margin-top: -3em;
+  align-self: center; /* Pusatkan logo secara horizontal */
+}
+
+.screen-1 .email,
+.screen-1 .password,
+.screen-1 .login {
+  max-width: 400px; /* Lebar maksimum untuk elemen form */
+  width: 100%; /* Pastikan elemen mengambil lebar penuh dari kontainer */
+}
+
+.screen-1 .login {
+  width: 150px;
+  align-self: flex-start;
+  margin-top: 1em; /* Jarak dari elemen di atasnya */
+}
+
+.screen-1 .email {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: -3em;
+  height: 50px; /* Kurangi tinggi form */
+  margin-bottom: 1em; /* Jarak dari elemen di bawahnya */
+}
+
+.screen-1 .email input {
+  outline: none;
+  border: none;
+  height: 20px; /* Sesuaikan tinggi input */
+}
+
+.screen-1 .email input::-moz-placeholder {
+  color: black;
+  font-size: 0.8em;
+}
+
+.screen-1 .email input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.8em;
+}
+
+.screen-1 .email input::placeholder {
+  color: black;
+  font-size: 0.8em;
+}
+
+.screen-1 .email ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+.screen-1 .password {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  height: 50px; /* Kurangi tinggi form */
+  margin-bottom: 1em; /* Jarak dari elemen di bawahnya */
+}
+
+.screen-1 .password input {
+  outline: none;
+  border: none;
+  height: 20px; /* Sesuaikan tinggi input */
+}
+
+.screen-1 .password input::-moz-placeholder {
+  color: black;
+  font-size: 0.8em;
+}
+
+.screen-1 .password input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.8em;
+}
+
+.screen-1 .password input::placeholder {
+  color: black;
+  font-size: 0.8em;
+}
+
+.screen-1 .password ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+.screen-1 .password .show-hide {
+  margin-right: -4.5em;
+}
+
+.screen-1 .login {
+  padding: 0.5em; /* Kurangi padding untuk mengurangi tinggi */
+  background: #3e4684;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  height: 40px; /* Tetapkan tinggi tetap */
+}
+
+.screen-1 .footer {
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 12em;
+  padding-bottom: 8em;
+  align-self: start;
+  margin-top: 2em; /* Jarak dari elemen di atasnya */
+}
+
+.screen-1 .footer span {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
